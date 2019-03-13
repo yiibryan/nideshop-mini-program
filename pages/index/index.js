@@ -13,7 +13,11 @@ Page({
     brands: [],
     floorGoods: [],
     banner: [],
-    channel: []
+    channel: [],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 500
   },
   onShareAppMessage: function () {
     return {

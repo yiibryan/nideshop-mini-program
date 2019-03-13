@@ -5,7 +5,9 @@ const app = getApp();
 
 Page({
   data: {
-    userInfo: {},
+    userInfo: {
+      avatarUrl: './user-unlogin.png',
+    },
     showLoginDialog: false
   },
   onLoad: function(options) {
@@ -58,6 +60,7 @@ Page({
       }
       wx.showToast({
         title: '微信登录失败',
+        icon: 'error'
       })
       return false
     }
@@ -67,10 +70,11 @@ Page({
         userInfo: e.detail
       }, 'POST');
     }).then((res) => {
-      console.log(res)
+      console.log('login', res)
       if (res.errno !== 0) {
         wx.showToast({
           title: '微信登录失败',
+          icon: 'error'
         })
         return false;
       }
