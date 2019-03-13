@@ -21,33 +21,29 @@ page{
 
 .input-box{
   flex: 1;
+  margin-right: 30rpx;
+  position: relative;
+}
+
+.input-box .coupon-sn{
+  box-sizing: border-box;
   height: 70rpx;
-  color: #333;
-  font-size: 24rpx;
   background: #fff;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4rpx;
-  margin-right: 30rpx;
-}
-
-.input-box .coupon-sn{
-  position: absolute;
-  top: 10rpx;
-  left: 30rpx;
-  height: 50rpx;
   width: 100%;
   color: #000;
-  line-height: 50rpx;
+  line-height: 70rpx;
   font-size: 24rpx;
+  padding: 0 62rpx 0 20rpx;
 }
 
 .clear-icon{
   position: absolute;
-  top: 21rpx;
-  right: 30rpx;
-  width: 28rpx;
-  height: 28rpx;
+  top:16rpx;
+  right:18rpx;
+  z-index: 2;
 }
 
 .add-btn{
